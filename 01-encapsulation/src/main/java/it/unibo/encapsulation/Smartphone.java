@@ -79,6 +79,30 @@ public class Smartphone {
     public boolean getHasNFC() {
         return this.hasNFC;
     }
+    public void setRam(int size) {
+        this.ram=size;
+    }
+    public void setCpu(int numberCpu) {
+        this.cpuCount=numberCpu;
+    }
+    public void setModel(String model) {
+        this.model=model;
+    }
+    public void setBrand(String brand) {
+        this.brand=brand;
+    }
+    public void setSdSize(int size) {
+        this.sdSize=size;
+    }
+    public void setGPS(boolean value) {
+        this.hasGPS=value;
+    }
+    public void set3G(boolean value) {
+        this.has3G=value;
+    }
+    public void setNFC(boolean value) {
+        this.hasNFC=value;
+    }
 
     public void printStringRep() {
         System.out.println("n CPU(s): " + cpuCount);
