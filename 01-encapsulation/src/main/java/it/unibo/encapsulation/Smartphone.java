@@ -10,13 +10,13 @@ public class Smartphone {
     private static final int DEF_N_CPU = 8;
 
     private final int cpuCount;
-    private final int ram;
-    private final int sdSize;
-    private final String brand;
-    private final String model;
-    private final boolean hasGPS;
-    private final boolean has3G;
-    private final boolean hasNFC;
+    private int ram;
+    private int sdSize;
+    private String brand;
+    private String model;
+    private boolean hasGPS;
+    private boolean has3G;
+    private boolean hasNFC;
 
     public Smartphone(
         final int cpuCount,
@@ -80,28 +80,28 @@ public class Smartphone {
         return this.hasNFC;
     }
     public void setRam(int size) {
-        this.ram=size;
+        this.ram = size;
     }
     public void setCpu(int numberCpu) {
-        this.cpuCount=numberCpu;
+        this.cpuCount = numberCpu;
     }
     public void setModel(String model) {
-        this.model=model;
+        this.model = model;
     }
     public void setBrand(String brand) {
-        this.brand=brand;
+        this.brand = brand;
     }
     public void setSdSize(int size) {
-        this.sdSize=size;
+        this.sdSize = size;
     }
     public void setGPS(boolean value) {
-        this.hasGPS=value;
+        this.hasGPS = value;
     }
     public void set3G(boolean value) {
-        this.has3G=value;
+        this.has3G = value;
     }
     public void setNFC(boolean value) {
-        this.hasNFC=value;
+        this.hasNFC = value;
     }
 
     public void printStringRep() {
