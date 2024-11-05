@@ -2,8 +2,8 @@ package it.unibo.encapsulation;
 
 public class Calculator {
 
-    int operationsPerformed;
-    double lastResult;
+    private int operationsPerformed;
+    private double lastResult;
 
     public Calculator() {
         this.operationsPerformed = 0;
@@ -30,6 +30,9 @@ public class Calculator {
 
     public double div(final double n1, final double n2) {
         return updateStatus(n1 / n2);
+    }
+    public int getOperationsPerformed() {
+        return this.operationsPerformed;
     }
 
     public static void printCalculatorStatus(final Calculator calc) {
